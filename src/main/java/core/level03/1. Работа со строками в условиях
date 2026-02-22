@@ -1,0 +1,9 @@
+
+Для строк используйте метод equals(), который сравнивает содержимое строк (а не ссылки).
+
+    Example:
+ String password = console.nextLine();
+ if (password.equals("qwerty"))            // вызываем метод equals() и передаем в него вторую строку
+ {
+     System.out.println("Вы вошли!");
+ }

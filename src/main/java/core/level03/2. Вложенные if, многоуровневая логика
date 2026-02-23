@@ -10,31 +10,8 @@ if (условиеА)
 
 Внутренний if будет выполняться только если внешний сработал.
 
-    Example:
-    System.out.print("Введите ваше имя: ");
-    String name = console.nextLine();
+    Смотри Example1:
 
-    System.out.print("Введите ваш возраст: ");
-    int age = console.nextInt();
-
-    if (age >= 21)
-    {
-        System.out.print("Введите пригласительный код: ");
-        String code = console.nextLine();
-
-        if (code.equals("VIP2024"))
-        {
-            System.out.println("Добро пожаловать, " + name + ", в VIP-клуб!");
-        }
-        else
-        {
-            System.out.println("Извините, неверный код. Доступ запрещён.");
-        }
-    }
-    else
-    {
-        System.out.println("Извините, вход только с 21 года!");
-    }
 
     Важно! Ещё раз: если в конструкции if-else не расставлены фигурные скобки, else относится к предыдущему (ближайшему к нему) if.
     ---------------------------------------------------------------------------------------------------------------------------------------
@@ -45,24 +22,5 @@ if (условиеА)
    Если возраст меньше, но у пользователя есть клубная карта — скидка 7%.
    В остальных случаях скидки нет.
 
-   System.out.print("Введите ваш возраст: ");
-   int age = console.nextInt();
+   Смотри Example2
 
-   double discount = 0.0;
-
-   if (age >= 60)
-   {
-       discount = 0.15;
-   }
-   else
-   {
-       System.out.print("Есть ли у вас клубная карта (да/нет)? ");
-       String hasCard = console.nextLine();
-
-       if (hasCard.equals("да"))
-       {
-           discount = 0.07;
-       }
-   }
-
-   System.out.println("Ваша скидка: " + (discount * 100) + "%");

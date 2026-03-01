@@ -1,4 +1,4 @@
-package main.java.core.level04.task65;
+package main.java.core.level04.task64;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * •	Введённый пароль должен проверяться на длину — если он короче 6 символов, запрос должен повторяться.
  * •	После ввода корректного пароля (длина не менее 6 символов) программа должна вывести "Пароль надёжен, аккаунт создан!".
  */
-public class Task65 {
+public class Task64 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         String password;

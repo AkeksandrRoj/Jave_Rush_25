@@ -1,4 +1,4 @@
-package main.java.core.level05.Task78;
+package main.java.core.level05.task78;
 
 import java.util.Scanner;
 

@@ -1,0 +1,36 @@
+    1. Сортировка массива: Arrays.sort
+Arrays.sort(массив);
+Arrays.sort(массив, начальныйИндекс, конечныйИндекс);
+смотри Example5_1
+Сортировка «на месте»: исходный массив меняется.
+Числа — по возрастанию, строки — по алфавиту.
+
+    2. Заполнение массива: Arrays.fill
+Arrays.fill(массив, значение);
+Arrays.fill(массив, начальныйИндекс, конечныйИндекс, значение);
+Метод заполняет все элементы или указанную часть массива одним и тем же значением.
+смотри Example5_2
+
+    3. Копирование массива: Arrays.copyOf и Arrays.copyOfRange
+Arrays.copyOf(исходныйМассив, новая Длина);
+смотри Example5_3
+
+    Arrays.copyOfRange
+Arrays.copyOfRange(исходныйМассив, начальныйИндекс, конечныйИндекс);
+смотри Example5_3
+
+    4. Сравнение массивов: Arrays.equals и Arrays.deepEquals
+Arrays.equals(массив1, массив2);  // для одномерных массивов
+Arrays.deepEquals(матрица1, матрица2); для двумерных массивов
+System.out.println(Arrays.equals(a, b)); // true
+int[][] matrix1 = {{1, 2}, {3, 4}};
+int[][] matrix2 = {{1, 2}, {3, 4}};
+
+System.out.println(Arrays.equals(matrix1, matrix2));     // false!
+System.out.println(Arrays.deepEquals(matrix1, matrix2)); // true
+
+    5. Красивый вывод массива: Arrays.toString и Arrays.deepToString
+System.out.println(Arrays.toString(arr))
+int[][] matrix = {{1, 2}, {3, 4}};
+System.out.println(Arrays.deepToString(matrix)); // [[1, 2], [3, 4]]
+
